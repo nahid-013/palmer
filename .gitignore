@@ -1,4 +1,4 @@
 build/
 CMakeLists.txt
 .vscode
-help_serbices/
+help_services/
