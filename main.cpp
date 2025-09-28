@@ -3,8 +3,8 @@
 #include <sstream>
 #include <iomanip>
 #include <ctime>
-// #include "help_services/time.h"
-
+#include "help_services/time_func/time.h"
+#include "help_services/make_response_func/response.h"
 
 using namespace std;
 using asio::ip::tcp;
@@ -31,15 +31,15 @@ std::string make_response(int status_code, const std::string& status_text, const
     return response.str();
 }
 
-std::string get_time() {
-    auto now = std::chrono::system_clock::now();
-    std::time_t t = std::chrono::system_clock::to_time_t(now);
-    std::tm utc_tm = *std::gmtime(&t);
+// std::string get_time() {
+//     auto now = std::chrono::system_clock::now();
+//     std::time_t t = std::chrono::system_clock::to_time_t(now);
+//     std::tm utc_tm = *std::gmtime(&t);
 
-    std::ostringstream oss;
-    oss << std::put_time(&utc_tm, "%Y-%m-%dT%H:%M:%SZ");
-    return oss.str();
-}
+//     std::ostringstream oss;
+//     oss << std::put_time(&utc_tm, "%Y-%m-%dT%H:%M:%SZ");
+//     return oss.str();
+// }
 
 std::string handle_root() {
     return make_response(200, "OK", "text/plain", "OK");
