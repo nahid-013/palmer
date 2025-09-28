@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/nahidgabibov/Desktop/Palmer/http_server/build",
-  "command": "/usr/bin/clang++ -DASIO_STANDALONE -I/opt/homebrew/opt/asio/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/http_server.dir/main.cpp.o -c /Users/nahidgabibov/Desktop/Palmer/http_server/main.cpp",
-  "file": "/Users/nahidgabibov/Desktop/Palmer/http_server/main.cpp",
-  "output": "CMakeFiles/http_server.dir/main.cpp.o"
-}
-]

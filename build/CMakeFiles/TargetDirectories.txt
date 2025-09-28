@@ -1,3 +1,0 @@
-/Users/nahidgabibov/Desktop/Palmer/http_server/build/CMakeFiles/http_server.dir
-/Users/nahidgabibov/Desktop/Palmer/http_server/build/CMakeFiles/edit_cache.dir
-/Users/nahidgabibov/Desktop/Palmer/http_server/build/CMakeFiles/rebuild_cache.dir
