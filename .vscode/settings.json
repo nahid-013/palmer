@@ -59,6 +59,7 @@
         "complex": "cpp",
         "cstddef": "cpp",
         "ostream": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "iomanip": "cpp"
     }
 }

@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # standalone режим
+
 add_definitions(-DASIO_STANDALONE)
 
 add_executable(http_server main.cpp)
