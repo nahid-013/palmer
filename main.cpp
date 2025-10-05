@@ -18,28 +18,6 @@ struct HttpRequest {
     std::string body;
 };
 
-
-std::string make_response(int status_code, const std::string& status_text, const std::string& content_type, const std::string& body) {
-    std::ostringstream response;
-    response << "HTTP/1.1 " << status_code << " " << status_text << "\r\n";
-    response << "Content-Type: " << content_type << "\r\n";
-    response << "Content-Length: " << body.size() << "\r\n";
-    response << "Connection: close\r\n";
-    response << "\r\n";
-    response << body;
-    return response.str();
-}
-
-// std::string get_time() {
-//     auto now = std::chrono::system_clock::now();
-//     std::time_t t = std::chrono::system_clock::to_time_t(now);
-//     std::tm utc_tm = *std::gmtime(&t);
-
-//     std::ostringstream oss;
-//     oss << std::put_time(&utc_tm, "%Y-%m-%dT%H:%M:%SZ");
-//     return oss.str();
-// }
-
 std::string handle_root() {
     return make_response(200, "OK", "text/plain", "OK");
 }
@@ -63,8 +41,6 @@ std::string handle_not_found() {
 
 
 
-
-// ОСНОВНЫЕ
 tcp::socket accept_connection(asio::io_context& ioc, tcp::acceptor& acceptor) {
     tcp::socket socket{ioc};
     std::cout << "[WAIT] accept...\n";
