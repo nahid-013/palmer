@@ -3,8 +3,8 @@
 #include <sstream>
 #include <iomanip>
 #include <ctime>
-#include "help_services/time_func/time.h"
-#include "help_services/make_response_func/response.h"
+#include "../include/server/response.h"
+#include "/Users/nahidgabibov/Desktop/Palmer/http_server/include/server/time.h"
 
 using namespace std;
 using asio::ip::tcp;
@@ -37,7 +37,6 @@ std::string handle_health() {
 std::string handle_not_found() {
     return make_response(404, "Not Found", "text/plain", "Not Found");
 }
-
 
 
 
