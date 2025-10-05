@@ -3,8 +3,8 @@
 #include <sstream>
 #include <iomanip>
 #include <ctime>
-#include "../include/server/response.h"
-#include "/Users/nahidgabibov/Desktop/Palmer/http_server/include/server/time.h"
+#include "server/response.hpp"
+#include "server/time.hpp"
 
 using namespace std;
 using asio::ip::tcp;
